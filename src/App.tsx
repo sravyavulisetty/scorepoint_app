@@ -1,15 +1,15 @@
-import {useState} from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { MdOutlineLightMode } from "react-icons/md";
 import { MdDarkMode } from "react-icons/md";
-import {ThemeContext} from './Contexts/ThemeContext';
-const App:React.FC =() => {
-  const [theme, setTheme] = useState("dark");
+import { ThemeContext } from './Contexts/ThemeContext';
+const App: React.FC = ()=>{
+  const [theme, setTheme] = useState("light");
   const toggleTheme =()=>{
-    setTheme((prev)=>prev === "dark"?"light":"dark");
+    setTheme((prev)=>prev === "light" ? "dark" : "light")
   }
-  return (
-    <ThemeContext.Provider value={{theme, toggleTheme}}>
+    return (
+      <ThemeContext.Provider value={{theme, toggleTheme}}>
     <div className="App" data-theme={theme}>
       {theme === "dark" ?
       <div className='icon' onClick={toggleTheme}>

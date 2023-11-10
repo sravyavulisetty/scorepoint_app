@@ -4,3 +4,4 @@ type themeContextType = {
   toggleTheme:(e: any) => void;
 }
 export const ThemeContext = createContext<themeContextType>({theme: "", toggleTheme: () =>{}})
+
