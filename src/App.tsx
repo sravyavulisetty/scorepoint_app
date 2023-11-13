@@ -14,8 +14,8 @@ const App: React.FC = ()=>{
       <ThemeContext.Provider value={{theme, toggleTheme}}>
       <div className="flex flex-col font-roboto data-[theme=dark]:text-textcolor data-[theme=dark]:bg-bgcolor data-[theme=light]:bg-bgcolor data-[theme=light]:text-textcolor" data-theme={theme}>
       <Header theme={theme} toggleTheme={toggleTheme}/>
-      <div className="flex min-h-screen justify-center items-center">
-        <h1 className='text-3xl font-extrabold'>Welcome to ScorePoint</h1>
+      <div className="flex justify-center items-center min-h-screen">
+        <h1 className='text-3xl font-extrabold m-0'>Welcome to ScorePoint</h1>
       </div>
       <Footer/>
       </div>

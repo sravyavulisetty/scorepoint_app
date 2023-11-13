@@ -9,7 +9,7 @@ interface MyComponentProps {
 const Header: React.FC<MyComponentProps> = ({theme, toggleTheme}) => {
   return (
     <nav className="h-30 font-roboto data-[theme=dark]:text-textcolor data-[theme=dark]:bg-bgcolor data-[theme=light]:bg-bgcolor data-[theme=light]:text-textcolor" data-theme={theme}>
-      <div className='flex flex-row justify-between items-center mx-2'>
+      <div className='flex flex-row justify-between items-center mx-4'>
         <div>
           <img src={logo} alt='logo' className='w-14 h-14 rounded-full'></img>
         </div>
