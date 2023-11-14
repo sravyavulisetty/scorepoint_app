@@ -1,32 +1,6 @@
-.App {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: x-large;
-}
-.icon{
-  position: absolute;
-  top: 5%;
-  left: 70%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.icon span{
-  padding-left: 2px;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root,[data-theme= "light"] {
   --bg-color: white;
   --text-color: green;

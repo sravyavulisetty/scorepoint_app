@@ -1,28 +1,26 @@
 import React, { useState } from 'react';
 import './App.css';
-import { MdOutlineLightMode } from "react-icons/md";
-import { MdDarkMode } from "react-icons/md";
+import './index.css';
 import { ThemeContext } from './Contexts/ThemeContext';
+import Header from './components/header';
+import Footer from './components/footer';
 const App: React.FC = ()=>{
   const [theme, setTheme] = useState("light");
   const toggleTheme =()=>{
     setTheme((prev)=>prev === "light" ? "dark" : "light")
   }
     return (
+      <>
       <ThemeContext.Provider value={{theme, toggleTheme}}>
-    <div className="App" data-theme={theme}>
-      {theme === "dark" ?
-      <div className='icon' onClick={toggleTheme}>
-        <MdOutlineLightMode size={25}/><span>Light</span>
-      </div> :
-      <div className='icon' onClick={toggleTheme}>
-        <MdDarkMode size={25}/><span>Dark</span>
-      </div>}
-      <div className="App-header">
-        <h1>Welcome to ScorePoint</h1>
+      <div className="h-screen flex flex-col font-roboto data-[theme=dark]:text-textcolor data-[theme=dark]:bg-bgcolor data-[theme=light]:bg-bgcolor data-[theme=light]:text-textcolor" data-theme={theme}>
+      <Header theme={theme} toggleTheme={toggleTheme}/>
+      <div className="flex justify-center items-center h-full">
+        <h1 className='text-3xl font-extrabold'>Welcome to ScorePoint</h1>
       </div>
-    </div>
+      <Footer/>
+      </div>
     </ThemeContext.Provider>
+    </>
   );
 }
 
