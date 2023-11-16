@@ -4,9 +4,11 @@
 :root,[data-theme= "light"] {
   --bg-color: white;
   --text-color: green;
+  --bg-button: green;
 }
 [data-theme = "dark"]{
   --bg-color: black;
   --text-color: red;
+  --bg-button:red;
 }
 

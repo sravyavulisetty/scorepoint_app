@@ -14,8 +14,12 @@ module.exports = {
         'textcolor':'var(--text-color)'
       },
       backgroundColor:{
-        'bgcolor':'var(--bg-color)'
-      }
+        'bgcolor':'var(--bg-color)',
+        'bgbutton':'var(--bg-button)'
+      },
+      borderColor:{
+        'bordercolor':'var(--border-color)'
+      },
     },
     
   },
