@@ -8,13 +8,20 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'roboto': ['Roboto', 'sans-serif']
+        'poppins':['Poppins','sans-serif']
       },
       textColor: {
         'textcolor':'var(--text-color)'
       },
       backgroundColor:{
-        'bgcolor':'var(--bg-color)'
+        'bgcolor':'var(--bg-color)',
+        'bgbutton':'var(--bg-button)'
+      },
+      borderColor:{
+        'bordercolor':'var(--border-color)'
+      },
+      width:{
+        'width':'45%'
       }
     },
     

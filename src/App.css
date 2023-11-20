@@ -1,12 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
 :root,[data-theme= "light"] {
   --bg-color: white;
-  --text-color: green;
+  --text-color: black;
 }
 [data-theme = "dark"]{
   --bg-color: black;
-  --text-color: red;
+  --text-color: white;
+}
+
+@keyframes slideInRight {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
 }
 
