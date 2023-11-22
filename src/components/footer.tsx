@@ -1,9 +1,6 @@
-interface MyComponentProps {
-  theme: string
-}
-const Footer: React.FC<MyComponentProps> = ({theme}) => {
+const Footer: React.FC = () => {
   return (
-    <div className='flex flex-row items-center p-4 text-sm m-0 font-poppins font-light' data-theme={theme}>
+    <div className='flex flex-row items-center p-4 text-sm m-0 font-light'>
       <p>&copy; Copyright 2023 ScoreShuffler.com</p>
       <div className='pl-10'>
         <a href='/home'>Home</a>

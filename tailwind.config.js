@@ -22,6 +22,12 @@ module.exports = {
       },
       width:{
         'width':'45%'
+      },
+      backgroundImage:{
+        'bgimage':'url("./wepik-export-20231121201325zvo9.jpeg")'
+      },
+      boxShadow:{
+        'custom':'5px 5px 5px rgb(63, 81, 181)'
       }
     },
     
