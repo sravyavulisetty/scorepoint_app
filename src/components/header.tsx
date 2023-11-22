@@ -1,6 +1,5 @@
 import React from 'react';
-import '../App.css';
-import logo from '../WhatsApp Image 2023-11-14 at 5.16.32 PM.jpeg'
+import logo from '../assets/WhatsApp Image 2023-11-14 at 5.16.32 PM.jpeg';
 import { MdLightMode } from "react-icons/md";
 import { IoToggle } from "react-icons/io5";
 import { IoIosMoon } from "react-icons/io";
