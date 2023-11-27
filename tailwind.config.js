@@ -24,11 +24,12 @@ module.exports = {
         'width':'45%'
       },
       backgroundImage:{
-        'bgimage':'url("./wepik-export-20231121201325zvo9.jpeg")'
+        'bgimage':'url("./wepik-export-20231121201325zvo9.jpeg")',
+        'bggradient':'linear-gradient(90deg, rgb(63, 81, 181) 10%, rgb(14, 165, 233) 30%, rgb(16, 185, 129) 90%)'
       },
       boxShadow:{
         'custom':'5px 5px 5px rgb(63, 81, 181)'
-      }
+      },
     },
     
   },

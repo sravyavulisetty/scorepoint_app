@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeContext } from './Contexts/ThemeContext';
 import Header from './components/header';
 import Footer from './components/footer';
-import Landingpage from './components/landing-page';
-import Signup from './components/signup';
+import Landingpage from './pages/landing-page';
+import Signup from './pages/signup';
+import Login from './pages/login';
 const App: React.FC = ()=>{
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -22,14 +23,13 @@ const App: React.FC = ()=>{
     return (
     <>
     <ThemeContext.Provider value={{theme, toggleTheme}}>
-      <div className="h-full font-poppins flex flex-col data-[theme=dark]:text-textcolor data-[theme=dark]:bg-bgcolor data-[theme=light]:bg-bgcolor data-[theme=light]:text-textcolor" data-theme={theme}>
+      <div className="h-screen font-poppins flex flex-col text-textcolor bg-bgcolor" data-theme={theme}>
         <Header theme={theme} toggleTheme={toggleTheme}/>
-        <Router>
           <Routes>
             <Route path='/' element={<Landingpage/>}/>
             <Route path='/signup' element={<Signup/>}/>
+            <Route path='/login' element={<Login/>}/>
           </Routes>
-        </Router>
         <Footer/>
       </div>
     </ThemeContext.Provider>
