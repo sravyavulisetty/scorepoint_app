@@ -5,9 +5,11 @@
 :root,[data-theme= "light"] {
   --bg-color: white;
   --text-color: black;
+  --xcolor: yellow;
 }
 [data-theme = "dark"]{
   --bg-color: black;
   --text-color: white;
+  --xcolor: red;
 }
 
