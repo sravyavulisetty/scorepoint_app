@@ -19,7 +19,6 @@ const App: React.FC = ()=>{
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
   };
-
     return (
     <>
     <ThemeContext.Provider value={{theme, toggleTheme}}>
