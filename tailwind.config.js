@@ -30,6 +30,7 @@ module.exports = {
       boxShadow:{
         'custom':'5px 5px 5px rgb(63, 81, 181)'
       },
+      display: "[group-hover]"
     },
     
   },
