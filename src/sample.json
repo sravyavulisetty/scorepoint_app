@@ -1,16 +1,24 @@
 {
     "gameId":1,
-    "ScorePoints":200,
-    "players":[{"id":1, "name":"Sravya"},{"id":2, "name": "Santosh"},{"id":3, "name": "Chandu"}],
-    "Scores":[{
-                "Round1": [{"id":1, "score":20},{"id":2, "score":40}],
-                "Round2":[{"id":1, "score":30},{"id":2, "score":30}],
-                "Round3":[{"id":1, "score":40},{"id":2, "score":50}]
-    }],
-    "Total scores after every round":[{
-                  "Round1": [{"id":1,  "totalscore" : 20},{"id":2, "totalscore":40}],
-                  "Round2":[{"id":1,  "totalscore" : 50},{"id":2, "totalscore": 70}],
-                  "Round3":[{"id":1,  "totalscore" : 90},{"id":2, "totalscore": 120}]
-    }],
-    "FinalScores":[{"id":1, "finalScore": 90},{"id":2, "finalscore": 120}]
+    "gameName":"randomText",
+    "totalScoreLimit":200,
+    "players":[{"playerId":1, "name":"Sravya"},{"playerId":2, "name": "Santosh"}],
+    "roundScores":[
+        {
+            "game": 1,
+            "scores":[{"playerId":1, "score":20, "active":true},{"playerId":2, "score":40, "active":true}],
+            "totalGameScore":[{"playerId":1, "score":20},{"playerId":2, "score":40}]
+        },
+        {
+            "game": 2,
+            "scores":[{"playerId":1, "score":20, "active":true},{"playerId":2, "score":40, "active":true}],
+            "totalGameScore":[{"playerId":1, "score":40},{"playerId":2, "score":80}]
+        },
+        {
+            "game": 3,
+            "scores":[{"playerId":1, "score":210, "active":false},{"playerId":2, "score":40, "active":true}],
+            "totalGameScore":[{"playerId":1, "score":210},{"playerId":2, "score":80}]
+        }
+    ],
+    "finalScores":[{"playerId":1, "finalScore": 90, "active": false},{"playerId":2, "finalscore": 120,"active": true}]
 }
