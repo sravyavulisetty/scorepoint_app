@@ -1,0 +1,16 @@
+{
+    "gameId":1,
+    "ScorePoints":200,
+    "players":[{"id":1, "name":"Sravya"},{"id":2, "name": "Santosh"},{"id":3, "name": "Chandu"}],
+    "Scores":[{
+                "Round1": [{"id":1, "score":20},{"id":2, "score":40}],
+                "Round2":[{"id":1, "score":30},{"id":2, "score":30}],
+                "Round3":[{"id":1, "score":40},{"id":2, "score":50}]
+    }],
+    "Total scores after every round":[{
+                  "Round1": [{"id":1,  "totalscore" : 20},{"id":2, "totalscore":40}],
+                  "Round2":[{"id":1,  "totalscore" : 50},{"id":2, "totalscore": 70}],
+                  "Round3":[{"id":1,  "totalscore" : 90},{"id":2, "totalscore": 120}]
+    }],
+    "FinalScores":[{"id":1, "finalScore": 90},{"id":2, "finalscore": 120}]
+}

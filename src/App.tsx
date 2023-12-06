@@ -7,6 +7,8 @@ import Footer from './components/footer';
 import Landingpage from './pages/landing-page';
 import Signup from './pages/signup';
 import Login from './pages/login';
+import Stepper from './components/Stepper';
+import Creategame from './pages/Creategame';
 const App: React.FC = ()=>{
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -28,6 +30,7 @@ const App: React.FC = ()=>{
             <Route path='/' element={<Landingpage/>}/>
             <Route path='/signup' element={<Signup/>}/>
             <Route path='/login' element={<Login/>}/>
+            <Route path='/creategame' element={<Creategame/>}/>
           </Routes>
         <Footer/>
       </div>
