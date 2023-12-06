@@ -3,11 +3,13 @@ import '../App.css';
 type  ButtonProps = {
   children: string | React.ReactNode,
   onClick : () => void,
-  disabled: boolean
+  disabled: boolean,
+  color: string,
+  borderRadius: number
 }
-const Button = ({children, onClick, disabled}:ButtonProps)=> {
+const Button = ({children, onClick, disabled, color, borderRadius}:ButtonProps)=> {
   return (
-   <button onClick={onClick} disabled={disabled} className='p-2 border border-green-500 rounded-full px-2'>{children}</button>
+   <button onClick={onClick} disabled={disabled} className='p-1.5 border mt-2 cursor-pointer' style={{borderColor: color, borderRadius: borderRadius}}>{children}</button>
   )
 }
 export default Button;
